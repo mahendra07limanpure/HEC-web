@@ -23,16 +23,16 @@ const TrekCard = ({
         />
       </div>
       <div className="p-6">
+          <span className="text-gray-600 text-xl font-bold">{title}</span> 
         <div className="flex items-center gap-2 mb-3">
           <span className="text-gray-600 text-sm">{duration}</span>
           <span className="w-1 h-1 bg-gray-400 rounded-full"></span>
           <span className="text-gray-600 text-sm">{difficulty}</span>
         </div>
-        <h3 className="text-xl font-bold mb-2">{title}</h3>
         <p className="text-gray-600 mb-6 line-clamp-2">{description}</p>
         <div className="flex items-center justify-between">
-          <button className="bg-blue-900 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-blue-800 transition">
-            KNOW MORE
+          <button className="bg-blue-900 text-white px-4 py-2 text-sm font-normal hover:bg-blue-800 transition whitespace-nowrap">
+              KNOW MORE
           </button>
           <div className="flex items-center gap-4">
             {trekLeads.map((lead, index) => (
