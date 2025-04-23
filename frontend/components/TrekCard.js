@@ -37,8 +37,8 @@ const TrekCard = ({
           <div className="flex items-center gap-4">
             {trekLeads.map((lead, index) => (
               <div key={index} className="flex items-center gap-2">
-                <span className="text-sm text-gray-600">Trek Lead:</span>
-                <span className="text-sm font-medium">{lead}</span>
+                <span className="text-sm text-gray-400">Trek Lead:</span>
+                <span className="text-sm  text-black font-medium">{lead}</span>
               </div>
             ))}
           </div>
