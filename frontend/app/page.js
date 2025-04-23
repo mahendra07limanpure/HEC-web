@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Testimonial from "../components/Testimonial";
 import TrekCard from "../components/TrekCard";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -164,75 +165,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black text-white py-12 px-4">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
-            <div className="flex items-center mb-4">
-              <Image
-                src="/logo.png"
-                alt="HEC Logo"
-                width={80}
-                height={80}
-                className="rounded-full mr-4"
-              />
-              {/* <div> */}
-              {/* <h3 className="font-bold text-xl mb-1">Himalayan Explorers&apos; Club</h3> */}
-              {/* <p className="text-sm">the students organization of IIT Roorkee</p> */}
-              {/* </div> */}
-            </div>
-            <p className="text-gray-400 text-sm mb-6 max-w-xl">
-              Himalayan Explorers&apos; Club - the students organization of IIT
-              Roorkee pioneering in trekking, mountaineering and adventure
-              sports.HEC was founded in 1971. In between 1971 & 1974 the
-              Institute Sports Association nurtured the Mountaineering &
-              Trekking Club which fostered all mountaineering, trekking and
-              outward bound activities amongst science, engineering and
-              professional student community of the Indian Institute of
-              Technology Roorkee.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <div className="flex flex-col space-y-2">
-                <a href="#about" className="text-white hover:text-gray-300">
-                  About us
-                </a>
-                <a href="#treks" className="text-white hover:text-gray-300">
-                  Treks
-                </a>
-                <a href="#team" className="text-white hover:text-gray-300">
-                  Team
-                </a>
-                <a href="#gallery" className="text-white hover:text-gray-300">
-                  Gallery
-                </a>
-              </div>
-            </div>
-            <div>
-              <div className="flex flex-col space-y-4">
-                <div>
-                  <p className="text-sm">Email:</p>
-                  <p className="text-white">hec@iitr.ac.in</p>
-                </div>
-                <div>
-                  <p className="text-sm">Phone:</p>
-                  <p className="text-white">+01332-28-4381</p>
-                </div>
-                <div>
-                  <p className="text-sm">Address:</p>
-                  <p className="text-white">
-                    HEC Office, 2nd Floor Multi Activity Center, IIT Roorkee
-                  </p>
-                  <p className="text-white">Roorkee, Uttarakhand-247667</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="container mx-auto mt-8 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-          <p>@copyright2025</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
