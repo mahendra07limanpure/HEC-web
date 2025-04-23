@@ -17,7 +17,7 @@ export default function Home() {
           <a href="#tours" className="text-white hover:text-gray-300">Tours</a>
           <a href="#gallery" className="text-white hover:text-gray-300">Gallery</a>
         </div>
-        <button className="bg-white text-blue-900 px-4 py-2 rounded-md font-medium">Contact Us</button>
+        <button className="bg-white text-blue-900 px-6 py-3 font-medium">Contact Us</button>
       </nav>
 
       {/* Hero Section */}
@@ -33,8 +33,8 @@ export default function Home() {
           <div className="absolute inset-0 bg-black opacity-30"></div>
         </div>
         <div className="relative flex flex-col items-center justify-center h-full text-white text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Unleash Your Inner Explorer</h1>
-          <button className="bg-white text-blue-900 px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition">Get Started</button>
+          <h1 className="text-4xl md:text-6xl font-bold mb-40">Unleash Your Inner Explorer</h1>
+          <button className="bg-white text-blue-900 px-6 py-3 font-medium hover:bg-gray-100 transition">Let&apos;s Explore</button>
         </div>
       </section>
 
@@ -205,7 +205,7 @@ export default function Home() {
               {/* </div> */}
             </div>
             <p className="text-gray-400 text-sm mb-6 max-w-xl">
-              Himalayan Explorers&apos; Club - the students organization of IIT Roorkee pioneering in trekking, mountaineering and adventure sports. HEC was founded in 1971. In between 1971 & 1974 the Institute Sports Association nurtured the Mountaineering & Trekking Club which fostered all mountaineering, trekking and outward bound activities amongst science, engineering and professional student community of the Indian Institute of Technology Roorkee.
+            Himalayan Explorers&apos; Club - the students organization of IIT Roorkee pioneering in trekking, mountaineering and adventure sports.HEC was founded in 1971. In between 1971 & 1974 the Institute Sports Association nurtured the Mountaineering & Trekking Club which fostered all mountaineering, trekking and outward bound activities amongst science, engineering and professional student community of the Indian Institute of Technology Roorkee.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
