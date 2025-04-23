@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image";
+import Testimonial from "../components/Testimonial";
 
 
 export default function Home() {
@@ -112,7 +113,7 @@ export default function Home() {
             </div>
           </div>
           <div className="text-center mt-8">
-            <button className="border border-white text-white px-6 py-2 rounded hover:bg-white hover:text-black transition">See More</button>
+            <button className="border-b border-white text-white px-6 py-2">VIEW MORE</button>
           </div>
         </div>
       </section>
@@ -169,64 +170,25 @@ export default function Home() {
       {/* Testimonials Section */}
       <section className="py-16 px-4 bg-black">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-center text-white">What Explorers says</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Testimonial 1 */}
-            <div className="border border-gray-200 rounded-lg p-6">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
-                <div>
-                  <h3 className="font-bold">John Smith</h3>
-                  <p className="text-sm text-red-600">Experienced</p>
-                </div>
-              </div>
-              <div className="mb-4">
-                <div className="flex text-yellow-500">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <span key={star}>★</span>
-                  ))}
-                </div>
-              </div>
-              <p className="text-gray-600">&ldquo;This was the trip of a lifetime! The views were incredible and the guides were knowledgeable and friendly. I can&apos;t wait to book my next adventure.&rdquo;</p>
-            </div>
-
-            {/* Testimonial 2 */}
-            <div className="border border-gray-200 rounded-lg p-6">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
-                <div>
-                  <h3 className="font-bold">Sarah Johnson</h3>
-                  <p className="text-sm text-blue-600">Adventure Seeker</p>
-                </div>
-              </div>
-              <div className="mb-4">
-                <div className="flex text-yellow-500">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <span key={star}>★</span>
-                  ))}
-                </div>
-              </div>
-              <p className="text-gray-600">&ldquo;The trek was challenging but so rewarding. The team made sure we were safe and comfortable throughout the journey. Highly recommend!&ldquo;</p>
-            </div>
-
-            {/* Testimonial 3 */}
-            <div className="border border-gray-200 rounded-lg p-6">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
-                <div>
-                  <h3 className="font-bold">Michael Chen</h3>
-                  <p className="text-sm text-green-600">Nature Lover</p>
-                </div>
-              </div>
-              <div className="mb-4">
-                <div className="flex text-yellow-500">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <span key={star}>★</span>
-                  ))}
-                </div>
-              </div>
-              <p className="text-gray-600">&ldquo;An unforgettable experience that connected me with nature in ways I never imagined. The landscapes were breathtaking and the memories will last forever.&ldquo;</p>
-            </div>
+            <Testimonial 
+              name="GARY SMITH"
+              title="One very first guest!"
+              description="This is a group of people who truly care about the world around them. That blew me away and I've been back every year since it started."
+              stars={5}
+            />
+            <Testimonial 
+              name="JENNIFER BRYAN"
+              title="An inspiration explorer"
+              description="There is no place I would rather be than inGamba. Thank you for exceeding our expectations and making it the #BESTWEEKEVER."
+              stars={3}
+            />
+            <Testimonial 
+              name="GARY SMITH"
+              title="One very first guest!"
+              description="I places, good food and wine. A"
+              stars={5}
+            />
           </div>
         </div>
       </section>
