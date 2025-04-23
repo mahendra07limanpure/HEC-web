@@ -39,7 +39,7 @@ export default function ContactForm() {
         ></textarea>
         <button
           type="submit"
-          className="bg-white text-black px-10 py-3 rounded-md hover:bg-gray-100 font-medium text-lg"
+          className="bg-white text-black px-10 py-3 hover:bg-gray-100 font-medium text-lg"
         >
           SEND MESSAGE
         </button>

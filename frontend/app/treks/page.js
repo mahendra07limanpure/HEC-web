@@ -146,24 +146,6 @@ export default function Treks() {
 
       {/* Contact Form */}
       <ContactForm />
-
-      {/* Footer */}
-      <footer className="bg-black text-white py-12 px-4">
-        <div className="container mx-auto">
-          <div className="flex items-center justify-center mb-4">
-            <Image
-              src="/logo.png"
-              alt="HEC Logo"
-              width={60}
-              height={60}
-              className="rounded-full"
-            />
-          </div>
-          <p className="text-center text-gray-400 text-sm">
-            © 2024 Himalayan Explorers' Club. All rights reserved.
-          </p>
-        </div>
-      </footer>
     </div>
   );
 }
