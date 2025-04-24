@@ -3,6 +3,7 @@ import Image from "next/image";
 import Testimonial from "../components/Testimonial";
 import TrekCard from "../components/TrekCard";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-black opacity-30"></div>
         </div>
+        <Navbar />
         <div className="relative flex flex-col items-center justify-center h-full text-white text-center px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-40">
             Unleash Your Inner Explorer
@@ -163,6 +165,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
