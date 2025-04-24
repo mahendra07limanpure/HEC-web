@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const TrekCard = ({ 
   imageSrc, 
@@ -6,8 +7,12 @@ const TrekCard = ({
   description, 
   difficulty, 
   duration,
-  trekLeads = []
+  trekLeads = [],
+  id = "valley-of-flowers" // Default ID for now, should be dynamic in real app
 }) => {
+  // Convert title to URL-friendly slug if no ID is provided
+  const trekId = id || title.toLowerCase().replace(/\s+/g, '-');
+  
   return (
     <div className="bg-white rounded-lg overflow-hidden">
       <div className="relative">
@@ -31,14 +36,16 @@ const TrekCard = ({
         </div>
         <p className="text-gray-600 mb-6 line-clamp-2">{description}</p>
         <div className="flex items-center justify-between">
-          <button className="bg-blue-900 text-white px-4 py-2 text-sm font-normal hover:bg-blue-800 transition whitespace-nowrap">
-              KNOW MORE
-          </button>
+          <Link href={`/treks/${trekId}`}>
+            <button className="bg-blue-900 text-white px-4 py-2 text-sm font-normal hover:bg-blue-800 transition whitespace-nowrap">
+                KNOW MORE
+            </button>
+          </Link>
           <div className="flex items-center gap-4">
             {trekLeads.map((lead, index) => (
               <div key={index} className="flex items-center gap-2">
                 <span className="text-sm text-gray-400">Trek Lead:</span>
-                <span className="text-sm  text-black font-medium">{lead}</span>
+                <span className="text-sm text-black font-medium">{lead}</span>
               </div>
             ))}
           </div>
