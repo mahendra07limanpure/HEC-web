@@ -105,7 +105,8 @@ export default function TrekDetailPage() {
         
         {/* Trek Title */}
         <div className="absolute bottom-1/4 w-full text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-8 font-serif">
+          <h1 className="text-[58px] font-normal text-white mb-8 tracking-[0.04em] leading-[100%]" 
+              style={{ fontFamily: 'Camica, sans-serif' }}>
             {trekData.title}
           </h1>
           
@@ -149,9 +150,9 @@ export default function TrekDetailPage() {
             </div>
             
             {/* Right side - Trek Leads */}
-            <div className="md:w-1/4 flex flex-col items-end space-y-4">
+            <div className="md:w-1/4 flex flex-col items-center md:items-end space-y-4">
               {trekData.teamMembers.map((member, index) => (
-                <div key={index} className="w-[172.8px] bg-white text-black rounded-md overflow-hidden">
+                <div key={index} className="w-[172.8px] bg-white text-black rounded-md overflow-hidden shadow-md">
                   <div className="h-[179.88px] relative">
                     <Image 
                       src={member.image} 
@@ -160,7 +161,7 @@ export default function TrekDetailPage() {
                       className="object-cover"
                     />
                   </div>
-                  <div className="p-2 text-center">
+                  <div className="p-3 text-center">
                     <h3 className="text-sm font-bold uppercase">{member.name}</h3>
                     <p className="text-xs text-gray-600 uppercase">TREK LEADER</p>
                     <p className="text-xs text-gray-500">+91 1234567890</p>
@@ -222,11 +223,13 @@ export default function TrekDetailPage() {
           </div>
         </div>
       </section>
+      <Footer />
 
       
       
 
       
     </div>
+    
   );
 }
