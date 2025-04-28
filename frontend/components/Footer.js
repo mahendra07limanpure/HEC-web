@@ -19,7 +19,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-sm text-gray-300 max-w-xl">
-              Himalayan Explorers' Club - the students organization of IIT Roorkee
+              Himalayan Explorers&apos; Club - the students organization of IIT Roorkee
               pioneering in trekking, mountaineering and adventure sports. HEC was
               founded in 1971. In between 1971 & 1974 the Institute Sports
               Association nurtured the Mountaineering & Trekking Club which

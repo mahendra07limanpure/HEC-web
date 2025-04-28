@@ -101,7 +101,6 @@ export default function TrekDetailPage() {
           priority
         />
         <div className="absolute inset-0 bg-black/30" />
-        <Navbar />
         
         {/* Trek Title */}
         <div className="absolute bottom-1/4 w-full text-center">
